@@ -5,7 +5,7 @@ import * as C from "./styles/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "./services/firebase";
 import LoginPage from "./pages/LoginPage";
-import Loading from "./components/Loading";
+//import Loading from "./components/Loading";
 import OtherChat from "./components/OtherChat";
 import Chat from "./components/Chat";
 
@@ -22,7 +22,7 @@ const App = () => {
     }
   }, [user]);
 
-  if (loading) return <Loading />;
+  //if (loading) return <Loading />;
 
   if (!user) return <LoginPage />;
 
