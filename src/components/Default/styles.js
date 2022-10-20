@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  background-color: #f8f8f8;
+  background #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,12 @@ export const Title = styled.h1`
 `;
 
 export const Info = styled.span`
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   max-width: 500px;
+  font-family: inter;
 `;
+
+export const Logo =styled.img`
+  width: 200px;
+`

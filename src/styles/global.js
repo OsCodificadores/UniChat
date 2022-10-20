@@ -14,6 +14,10 @@ body{
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    background: #121214;
+}
+
 `;
 
 export default GlobalStyle;

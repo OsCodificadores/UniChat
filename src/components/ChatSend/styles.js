@@ -18,7 +18,7 @@ export const Container = styled.div`
 export const Form = styled.form`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
 `;
 
@@ -28,5 +28,6 @@ export const Input = styled.input`
   border: none;
   border-radius: 5px;
   width: 100%;
-  box-shadow: inset 0 0 1px 1px #0003;
+  box-shadow: inset 0 0 1px 1px #6a6e6e;
+  background: #f0f2f5;
 `;
