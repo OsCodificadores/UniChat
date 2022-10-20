@@ -8,7 +8,7 @@ export const Container = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #f0f2f5;
+    background-color: #3c3d3d;
   }
 
   svg {
@@ -21,12 +21,17 @@ export const Container = styled.div`
   }
 
   &.active {
-    background-color: #f0f2f5;
+    background-color: #3c3d3d;
   }
 `;
 
 export const Name = styled.span`
-  font-size: 18px;
+
+  font-size: 15px;
+  font-family: poppins;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
   overflow: hidden;
   text-overflow: ellipsis;
 `;

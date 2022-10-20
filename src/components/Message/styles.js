@@ -7,7 +7,7 @@ export const Line = styled.div`
   display: flex;
   &.me {
     > div {
-      background-color: #dcf8c6;
+      background-color: #78b4a9;
     }
     justify-content: right;
   }
@@ -29,8 +29,8 @@ export const Message = styled.span`
 `;
 
 export const MessageDate = styled.span`
-  font-size: 11px;
-  color: #999;
+  font-size: 13px;
+  color: #4b4b4b;
   text-align: right;
   height: 15px;
   margin: -5px 5px 0;

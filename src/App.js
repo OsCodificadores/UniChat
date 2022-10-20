@@ -8,10 +8,11 @@ import LoginPage from "./pages/LoginPage";
 //import Loading from "./components/Loading";
 import OtherChat from "./components/OtherChat";
 import Chat from "./components/Chat";
+import HomePage from "./pages/HomePage";
 
 
 const App = () => {
-    const [user, loading] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const [userChat, setUserChat] = useState(null);
     useEffect(() => {
         if (user) {

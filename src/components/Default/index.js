@@ -1,14 +1,14 @@
 import React from "react";
 import * as C from "./styles";
-import { MdMessage } from "react-icons/md";
+
+import Logo from "../assets/Logo3.png";
 
 const Default = () => {
   return (
     <C.Container>
-      <MdMessage />
-      <C.Title>uniChat</C.Title>
+      <C.Logo src={Logo}></C.Logo>
       <C.Info>
-        Sua comunicação a um click de distancia.
+        Sua comunicação a um click de distância.
       </C.Info>
     </C.Container>
   );

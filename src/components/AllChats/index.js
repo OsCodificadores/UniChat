@@ -5,6 +5,7 @@ import * as C from "./styles";
 import { useCollection } from "react-firebase-hooks/firestore";
 import ListChats from "../ListChats";
 
+
 const AllChats = ({ setUserChat, userChat }) => {
   const [user] = useAuthState(auth);
 
