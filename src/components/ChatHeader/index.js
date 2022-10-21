@@ -7,8 +7,8 @@ function ChatHeader({photoURL, name }) {
   return (
     <C.Container>
       <C.UserInfo>
-        {/* {photoURL ? <C.Avatar src={photoURL} alt="Avatar" /> : <MdPerson />} */}
-        <MdPerson />
+        {photoURL ? <C.Avatar src={photoURL} alt="Avatar" /> : <MdPerson />}
+        {/* <MdPerson /> */}
         <C.NameContent>
           <C.Name>{name}</C.Name>
         </C.NameContent>
