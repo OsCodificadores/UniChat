@@ -37,8 +37,12 @@ export const Name = styled.span`
 `;
 
 export const Avatar = styled.img`
-  max-width: 30px;
-  max-height: 30px;
+@media(min-width: 500px) {
+  width: 0px;
+  height: 0px;
+}
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 10px;
   min-width: fit-content;
