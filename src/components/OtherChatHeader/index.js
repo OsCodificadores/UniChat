@@ -6,6 +6,7 @@ import { auth, db } from "../../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { BiLogOut } from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 const OtherChatHeader = ({setUserChat}) => {
   const [user] = useAuthState(auth);
@@ -40,7 +41,7 @@ const OtherChatHeader = ({setUserChat}) => {
   
   return (
     <C.Container>
-      <BiLogOut onClick={() => [auth.signOut(), setUserChat(null)]}/>
+      <Link to="/"><BiLogOut onClick={() => [auth.signOut(), setUserChat(null)]}/></Link>
       <C.Options>
         <MdPersonAddAlt1 onClick={handleCreateChat} />
       </C.Options>

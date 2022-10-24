@@ -12,6 +12,7 @@ export const Container = styled.div`
   svg{
   width: 30px;
   height: 30px;
+  text-decoration: none;
   cursor:pointer;
   }
 

@@ -9,30 +9,21 @@ import LoginPage from "./pages/LoginPage";
 import OtherChat from "./components/OtherChat";
 import Chat from "./components/Chat";
 import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Routes,Route } from "react-router-dom"
+import Home from "./components/Home";
+import Login from "./components/Login";
+import ChatPage from "./pages/ChatPage";
 
 
 const App = () => {
-    const [user] = useAuthState(auth);
-    const [userChat, setUserChat] = useState(null);
-    useEffect(() => {
-        if (user) {
-        db.collection("users").doc(user.uid).set({
-            email: user.email,
-            photoURL: user.photoURL,
-        });
-    }
-  }, [user]);
-
-  //if (loading) return <Loading />;
-
-  if (!user) return <LoginPage />;
-
     return (
-     <C.Container>
-        <OtherChat setUserChat={setUserChat} userChat={userChat}/>
-        <Chat userChat={userChat} />
-    </C.Container>
-    )
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/login" element={<ChatPage/>}/>
+            </Routes>
+        </Router>
+    );
 };
 
 export default App;
