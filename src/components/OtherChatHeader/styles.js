@@ -9,24 +9,29 @@ export const Container = styled.div`
   justify-content: space-between;
   margin-bottom: 5px;
   box-shadow: 0 1px 2px #0003;
+  svg{
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+  }
+
 
 `;
 
 export const Avatar = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   border-radius: 50%;
 `;
 
 export const Options = styled.div`
   display: flex;
-  gap: 10px;
   svg {
-
     width: 24px;
     height: 24px;
     color: #000;
     cursor: pointer;
   }
+  
 `;

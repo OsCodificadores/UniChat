@@ -39,6 +39,8 @@ export const Name = styled.span`
   font-weight: bold;
   letter-spacing: 1px;
 `;
+export const Logo =styled.img`
+  width: 80px;`
 
 export const Avatar = styled.img`
   width: 30px;
@@ -57,5 +59,7 @@ export const Options = styled.div`
     height: 24px;
     color: #000;
     cursor: pointer;
+    
   }
+  
 `;

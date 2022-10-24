@@ -1,7 +1,7 @@
 import React from 'react'
 import * as C from "./styles";
 import { MdPerson, MdMoreVert, MdSearch } from "react-icons/md";
-
+import Logo from "../assets/Logo3.png";
 
 function ChatHeader({photoURL, name }) {
   return (
@@ -13,10 +13,11 @@ function ChatHeader({photoURL, name }) {
           <C.Name>{name}</C.Name>
         </C.NameContent>
       </C.UserInfo>
-      <C.Options>
+      {/* <C.Options>
         <MdSearch />
         <MdMoreVert />
-      </C.Options>
+      </C.Options> */}
+      <C.Logo src={Logo}></C.Logo>
     </C.Container>
   )
 }

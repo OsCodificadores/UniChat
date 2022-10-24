@@ -1,11 +1,11 @@
 import React from "react";
 import * as C from "./styles";
-import { MdDonutLarge, MdChat, MdMoreVert } from "react-icons/md";
+import { MdDonutLarge, MdMoreVert, MdPersonAddAlt1 } from "react-icons/md";
 import * as EmailValidator from "email-validator";
 import { auth, db } from "../../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
-import { MdPerson } from "react-icons/md";
+import { BiLogOut } from "react-icons/bi";
 
 const OtherChatHeader = ({setUserChat}) => {
   const [user] = useAuthState(auth);
@@ -40,11 +40,9 @@ const OtherChatHeader = ({setUserChat}) => {
   
   return (
     <C.Container>
-      <MdPerson onClick={() => [auth.signOut(), setUserChat(null)]}/>
+      <BiLogOut onClick={() => [auth.signOut(), setUserChat(null)]}/>
       <C.Options>
-        <MdDonutLarge />
-        <MdChat onClick={handleCreateChat} />
-        <MdMoreVert />
+        <MdPersonAddAlt1 onClick={handleCreateChat} />
       </C.Options>
     </C.Container>
   )
