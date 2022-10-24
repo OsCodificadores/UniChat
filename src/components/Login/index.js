@@ -12,10 +12,7 @@ const Login = () =>{
 
     return(
         <>
-        
-        <Navbar>
-        </Navbar>
-
+        <Navbar/>
         <C.Container>
             <C.Logo src={Logo}></C.Logo>
             <C.Span>Logue com sua conta do <C.gradientText>g</C.gradientText><C.gradientText1>o</C.gradientText1><C.gradientText2>o</C.gradientText2><C.gradientText>g</C.gradientText><C.gradientText4>l</C.gradientText4><C.gradientText1>e</C.gradientText1>, rápido e prático!</C.Span>

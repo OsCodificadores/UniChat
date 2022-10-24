@@ -106,8 +106,7 @@ export const ContentSpan = styled.span `
 export const gradientText = styled.div `
 
   position: relative;
-  background: rgb(255,655,255);
-  background: linear-gradient(351deg, rgba(255,255,255,1) 9%, rgba(0,172,255,1) 100%);
+  background: #78B4A9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
