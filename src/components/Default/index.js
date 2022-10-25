@@ -15,7 +15,7 @@ const Default = () => {
         scale:1,
       }}
       transition={{
-        duration: 2,
+        duration: 3,
         yoyo: Infinity
       }}>
       <C.Logo src={Logo}></C.Logo>

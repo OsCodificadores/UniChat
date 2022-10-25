@@ -20,7 +20,7 @@ const Home = () => {
        <S.ContentSpan><S.gradientText>quem</S.gradientText> você quiser!</S.ContentSpan>
        <Link to="/login"><S.getStarted >Comece agora!</S.getStarted></Link></S.ContentText>
        <S.ContentSVG><motion.img className="iamge" alt="" src={User} initial={{
-        scale:0.8,
+        scale:1,
         y:-10,
       }}
       animate={{
@@ -28,7 +28,7 @@ const Home = () => {
         y:0,
       }}
       transition={{
-        duration: 2,
+        duration: 3,
         yoyo: Infinity
       }}></motion.img></S.ContentSVG>
     </S.Container>
