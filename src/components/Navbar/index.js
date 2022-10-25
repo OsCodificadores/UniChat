@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <S.Menu isOpen={isOpen}>
         <S.MenuLink href="/">Home</S.MenuLink>
-        <S.MenuLink href="/login">Login</S.MenuLink>
+        <S.MenuLink href="/Login">Login</S.MenuLink>
       </S.Menu>
     </S.Nav>
 
