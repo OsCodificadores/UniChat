@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-*{text-decoration: none;}
   height: 59px;
   background-color: #78b4a9;
   padding: 10px 16px;
@@ -13,12 +12,11 @@ export const Container = styled.div`
   svg{
   width: 30px;
   height: 30px;
-
-  a
-  {text-decoration: none;}
-  cursor:pointer;
   }
-
+  a{
+    text-decoration: none;
+  color: #000;
+  }
 
 `;
 
@@ -27,14 +25,16 @@ export const Avatar = styled.img`
   height: 50px;
   cursor: pointer;
   border-radius: 50%;
-  a {
+  *a {
   text-decoration: none;
-}
+};
 `;
 
 export const Options = styled.div`
 
-text-decoration: none;
+a {
+    text-decoration: none;
+}
   display: flex;
   svg {
     width: 24px;
