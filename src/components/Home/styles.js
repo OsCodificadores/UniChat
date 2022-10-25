@@ -29,15 +29,19 @@ export const Container = styled.div `
 export const ContentLogo2 = styled.div `
   display: flex;
   justify-content: center;
-`
 
-export const Logo2 = styled.img `
-  width: 220px;
+  .logo2{
+    width: 220px;
   margin-bottom: 0px;
 
   @media (max-width: 690px) {
     width: 150px;
   }
+  }
+`
+
+export const Logo2 = styled.img `
+
 `
 
 export const ContentText = styled.div `
@@ -75,6 +79,22 @@ export const ContentSVG = styled.div `
   @media (max-width: 690px) {
     margin-left: 30px;
     margin-top: -30px;
+    }
+
+    .iamge{
+      width: 400px;
+  filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
+
+
+  @media (max-width: 870px){
+    width: 250px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: 690px) {
+    width: 220px;
+    margin-left: 50px;
+  }
     }
 `
 
@@ -151,17 +171,5 @@ export const getStarted = styled.div `
 
 export const UserSVG = styled.img `
 
-  width: 400px;
-  filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
-
-
-  @media (max-width: 870px){
-    width: 250px;
-    margin-top: 80px;
-  }
-
-  @media (max-width: 690px) {
-    width: 220px;
-    margin-left: 50px;
-  }
+ 
 `

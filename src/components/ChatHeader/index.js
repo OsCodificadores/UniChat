@@ -1,7 +1,9 @@
 import React from 'react'
 import * as C from "./styles";
+import {Logo} from "./styles";
 import { MdPerson, MdMoreVert, MdSearch } from "react-icons/md";
-import Logo from "../assets/Logo3.png";
+import Logo2 from "../assets/Logo3.png";
+import { motion } from "framer-motion";
 
 function ChatHeader({photoURL, name }) {
   return (
@@ -17,7 +19,7 @@ function ChatHeader({photoURL, name }) {
         <MdSearch />
         <MdMoreVert />
       </C.Options> */}
-      <C.Logo src={Logo}></C.Logo>
+      <motion.img src={Logo2} whileHover={{scale:1.1, rotate:360}} className="imguni"/>
     </C.Container>
   )
 }

@@ -9,7 +9,9 @@ export const Container = styled.div`
   justify-content: space-between;
   box-shadow: 0 1px 2px #0003;
   z-index: 1;
-  
+  .imguni{
+    width: 80px;
+  }
 `;
 
 export const UserInfo = styled.div`
@@ -40,14 +42,13 @@ export const Name = styled.span`
   letter-spacing: 1px;
 `;
 export const Logo =styled.img`
-  width: 80px;`
+  `
 
 export const Avatar = styled.img`
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
-  min-width: fit-content;
 `;
 
 export const Options = styled.div`
