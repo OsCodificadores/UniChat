@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
 
       <S.Menu isOpen={isOpen}>
         <S.MenuLink href="/">Home</S.MenuLink>
-        <S.MenuLink href="/Login">Login</S.MenuLink>
+        <Link to="/login"><S.MenuLink>Login</S.MenuLink></Link>
       </S.Menu>
     </S.Nav>
 
