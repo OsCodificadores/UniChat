@@ -12,7 +12,7 @@ const ChatSend = ({ chatId }) => {
 
   const handleSendMessage = (e) => {
     e.preventDefault();
-    if (message.length >0){
+    if (((message.trim()).length) >0){
       db.collection("chats").doc(chatId).collection("messages").add({
         message: message,
         user: user.email,
